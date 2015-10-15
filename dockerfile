@@ -1,3 +1,5 @@
+FROM centos:centos6
+
 #Install WGET
 RUN yum install -y wget
 
