@@ -12,8 +12,8 @@ RUN cd /opt;wget --no-check-certificate --no-cookies --header "Cookie: oraclelic
 RUN cd /opt;tar xvf jdk-7u55-linux-x64.tar.gz
 RUN alternatives --install /usr/bin/java java /opt/jdk1.7.55/bin/java 2
 
-RUN useradd pentaho
-RUN passwd pentaho
+CMD useradd pentaho
+CMD passwd pentaho
 
 ENV JAVA_HOME /opt/jdk1.7.0_55
 
